@@ -14,29 +14,42 @@ export const Content = styled.div`
     padding-right: 1rem;
     height: 100vh;
 `
+export const Section = styled.div`
+    max-width: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 1.5rem;
+
+    `
 export const Container_banner = styled.div`
     padding-left: 1rem;
     padding-right: 1rem;
     display: inline-flex;
     max-width: 1140px;
     width: 100%;
-    height: 40.3125rem;
+    height: 100vh;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    
     z-index: 2;
-
-    background-color: transparent;
-    backdrop-filter: blur(2px);
 `
 export const Image = styled.div`
     width: 13rem;
     height: 13rem;
     border-radius: 17rem;
     border: 1px solid #000;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.25);
     z-index: 2;
+
+    background-color: transparent;
+    backdrop-filter: blur(2px);
 `
 
 export const Title = styled.h1`  
@@ -48,6 +61,8 @@ export const Title = styled.h1`
     font-weight: 400;
     line-height: normal;
     
+    background-color: transparent;
+    backdrop-filter: blur(4px);
 `
 
 export const Text = styled.p`
@@ -57,6 +72,9 @@ export const Text = styled.p`
     font-weight: 300;
     line-height: normal;
     max-width: 525px;
+
+    background-color: transparent;
+    backdrop-filter: blur(4px);
 `
 
 export const Cta = styled.div`
@@ -65,6 +83,9 @@ export const Cta = styled.div`
     align-items: center;
     gap: 1rem;
     z-index: 2;
+
+    background-color: transparent;
+    backdrop-filter: blur(4px);
 `
 
 export const Button = styled.a`
