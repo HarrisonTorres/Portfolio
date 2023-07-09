@@ -1,7 +1,12 @@
+import Image from 'next/image'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
+import './css/style_header.css'
+
+//import svgs
+const icon_moon = '/svg/icon_moon.svg'
+const icon_translate = 'svg/icon_translate.svg'
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,8 +19,36 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt">
+      <body>
+        <header className='header_layout'>
+          <div className='logo_layout'>
+            <Image src={'/logo-HT.png'} alt='Logo HT' width={91} height={56.25}></Image>
+          </div>
+          <div className='nav-bar-header'>
+            <nav className='nav_bar_layout'>
+              <Link href={'#'}>
+                Inicio
+              </Link>
+              <Link href={'#'}>
+                Sobre
+              </Link>
+              <Link href={'#'}>
+                Contato
+              </Link>
+            </nav>
+            <div className='icons-layout'>
+              <a>
+                <Image src={icon_moon} alt='Mundar tema para dark/light' width={16} height={14.55}></Image>
+              </a>
+              <a>
+                <Image src={icon_translate} alt='Mundar idioma' width={16} height={15.44}></Image>
+              </a>
+            </div>
+          </div>
+        </header>
+        {children}
+      </body>
     </html>
   )
 }
