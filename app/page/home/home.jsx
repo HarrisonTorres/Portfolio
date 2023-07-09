@@ -5,14 +5,30 @@ import * as S from "./styles";
 import Image from "next/image";
 import ParticlesBackgound from "@/app/components/particles/particles";
 import ProjectsContainer from "@/app/components/projects_container/projects";
+import MouseFollower from "@/app/components/mouse_position/mouse_position";
+
+//svgs
+const iconInstagram = "/assets/icons/icon_instagram.svg";
+const iconLinkedin  = "/assets/icons/icon_linkedin.svg";
+const iconGithub = "/assets/icons/icon_github.svg";
+const iconWhatsapp = "/assets/icons/icon_whatsapp.svg";
 function Home() {
   return (
     <div>
       <ParticlesBackgound />
+      
       <S.Container>
         <S.Container_banner>
           <S.Section>
-            <S.Image></S.Image>
+            <S.Image>
+              <Image
+                src="/assets/images/profile_my_image.png"
+                alt="Foto de Harrison"
+                width={208}
+                height={208}
+                object-fit="contain"
+              />
+            </S.Image>
             <S.Title>Olá, Eu sou o Harrison</S.Title>
             <S.Text>
               Sou um desenvolvedor web especializado na experiência do usuário,
@@ -25,6 +41,33 @@ function Home() {
               <S.ButtonSecudary href="/">Contato</S.ButtonSecudary>
             </S.Cta>
           </S.Section>
+          <S.NavSocialMidia>
+            <Image 
+              src={iconGithub}
+              alt="Icone para acessar github"
+              width={36}
+              height={36}
+            />
+            <Image 
+              src={iconLinkedin}
+              alt="Icone para acessar Linkedin"
+              width={36}
+              height={36}
+            />
+            <Image 
+              src={iconInstagram}
+              alt="Icone para acessar instagram"
+              width={36}
+              height={36}
+            />
+            <Image 
+              src={iconWhatsapp}
+              alt="Icone para acessar whatsapp"
+              width={36}
+              height={36}
+            />
+          </S.NavSocialMidia>
+
         </S.Container_banner>
         <ProjectsContainer
           title={"Site para engenheiros"}
@@ -54,6 +97,7 @@ function Home() {
           urlImage={"/"}
         />
       </S.Container>
+      <MouseFollower />
     </div>
   );
 }

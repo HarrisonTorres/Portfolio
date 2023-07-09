@@ -27,6 +27,9 @@ export const Section = styled.div`
 
     gap: 1.5rem;
 
+    @media (max-width: 524px) {
+        max-width: 100%;
+    }
     `
 export const Container_banner = styled.div`
     padding-left: 1rem;
@@ -50,6 +53,7 @@ export const Image = styled.div`
 
     background-color: transparent;
     backdrop-filter: blur(2px);
+    overflow: hidden;
 `
 
 export const Title = styled.h1`  
@@ -114,4 +118,33 @@ export const ButtonSecudary = styled.a`
     font-weight: 600;
     line-height: normal;
     text-decoration-line: underline;
+`
+export const NavSocialMidia = styled.div`
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.25rem;
+    height: 18.375rem;
+    background-color: var(--primary-color);
+    border-radius: 2.5rem 0rem 0rem 2.5rem;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0.4;
+
+    &:hover{
+        opacity: 1;
+    }
+    & > img {
+        cursor: pointer;
+    }
+    
+    @media (max-width: 524px) {
+        display: none;
+    }
 `

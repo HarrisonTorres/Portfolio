@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
+    z-index:0;
 `
 export const Content = styled.div`
     max-width: 1140px;
@@ -24,6 +25,10 @@ export const Section = styled.div`
 
     background: rgba(0, 0, 0, 0.20);
     box-shadow: 4px 0px 24px 0px rgba(255, 255, 255, 0.08);
+
+    @media (max-width: 524px) {
+        max-width: none;
+    }
 `
 export const TextContainer = styled.div`
     max-width: 25rem;

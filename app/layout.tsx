@@ -5,8 +5,8 @@ import Link from 'next/link'
 import './css/style_header.css'
 
 //import svgs
-const icon_moon = '/svg/icon_moon.svg'
-const icon_translate = 'svg/icon_translate.svg'
+const icon_moon = '/assets/icons/icon_moon.svg'
+const icon_translate = '/assets/icons/icon_translate.svg'
 
 export const metadata = {
   title: 'Create Next App',
@@ -23,11 +23,11 @@ export default function RootLayout({
       <body>
         <header className='header_layout'>
           <div className='logo_layout'>
-            <Image src={'/logo-HT.png'} alt='Logo HT' width={91} height={56.25}></Image>
+            <Image src={'/assets/logo-HT.png'} alt='Logo HT' width={91} height={56.25}></Image>
           </div>
           <div className='nav-bar-header'>
             <nav className='nav_bar_layout'>
-              <Link href={'#'}>
+              <Link href={'/'}>
                 Inicio
               </Link>
               <Link href={'#'}>
