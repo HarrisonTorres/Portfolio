@@ -3,6 +3,8 @@ import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import particlesConfig from "./config/particles_config";
+
+import '../css/style_particles.css'
 const ParticlesBackgound = () => {
   
   const particlesInit = useCallback(async engine => {
@@ -13,9 +15,9 @@ const ParticlesBackgound = () => {
 
 
   return (
-    <div >
+    <div className="particles_container">
         <Particles 
-        className="particles_Canva"
+        id="tsparticles"
         options={particlesConfig}
         init={particlesInit}
         />

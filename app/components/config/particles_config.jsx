@@ -106,9 +106,11 @@ const particlesConfig = {
         }
       }
     },
-    "background":{
-        "position": "relative",
+    "fullScreen":{
+      "enable": false,
+      "zIndex": -1,
     },
+    
     "retina_detect": true
   }
 

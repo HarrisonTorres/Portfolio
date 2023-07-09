@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-    margin-top: 4.6875rem;
+    padding-top: 4.6875rem;
     max-width: 1140px;
     width: 100%;
     height: 100vh;
@@ -9,7 +9,7 @@ export const Container = styled.div`
 `
 export const Container_banner = styled.div`
     display: inline-flex;
-    max-width: 50%;
+    max-width: 525px;
     height: 40.3125rem;
     padding: 1rem 0rem 1rem 5rem;
     flex-direction: column;
