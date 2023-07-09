@@ -2,16 +2,25 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
     padding-top: 4.6875rem;
-    max-width: 1140px;
     width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 1;
 `
+export const Content = styled.div`
+    max-width: 1140px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100vh;
+`
 export const Container_banner = styled.div`
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: inline-flex;
-    max-width: 525px;
+    max-width: 1140px;
+    width: 100%;
     height: 40.3125rem;
-    padding: 1rem 0rem 1rem 5rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
@@ -47,6 +56,7 @@ export const Text = styled.p`
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    max-width: 525px;
 `
 
 export const Cta = styled.div`
