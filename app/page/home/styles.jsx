@@ -54,6 +54,15 @@ export const Image = styled.div`
     background-color: transparent;
     backdrop-filter: blur(2px);
     overflow: hidden;
+
+    & > img:hover{
+        cursor: pointer;
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+    & > img:active{
+        opacity: 0.5;
+    }
 `
 
 export const Title = styled.h1`  
@@ -65,6 +74,7 @@ export const Title = styled.h1`
     font-weight: 400;
     line-height: normal;
     
+    border-radius: 12px;
     background-color: transparent;
     backdrop-filter: blur(4px);
 `
@@ -77,6 +87,7 @@ export const Text = styled.p`
     line-height: normal;
     max-width: 525px;
 
+    border-radius: 12px;
     background-color: transparent;
     backdrop-filter: blur(4px);
 `
@@ -88,6 +99,7 @@ export const Cta = styled.div`
     gap: 1rem;
     z-index: 2;
 
+    border-radius: 12px;
     background-color: transparent;
     backdrop-filter: blur(4px);
 `
@@ -124,7 +136,7 @@ export const NavSocialMidia = styled.div`
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 3.25rem;
+    width: 2.5rem;
     height: 18.375rem;
     background-color: var(--primary-color);
     border-radius: 2.5rem 0rem 0rem 2.5rem;
@@ -137,8 +149,10 @@ export const NavSocialMidia = styled.div`
     gap: 1rem;
     opacity: 0.4;
 
+    transition: 0.5s;
     &:hover{
         opacity: 1;
+        width: 3.25rem;
     }
     & > img {
         cursor: pointer;
@@ -147,4 +161,9 @@ export const NavSocialMidia = styled.div`
     @media (max-width: 524px) {
         display: none;
     }
+`
+export const SlidePorject = styled.div`
+    width: 100%;
+    height: 100%;
+    
 `

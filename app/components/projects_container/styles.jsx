@@ -4,6 +4,8 @@ export const Container = styled.div`
     width: 100%;
     height: 100vh;
     z-index:0;
+    position: sticky;
+    top: 0;
 `
 export const Content = styled.div`
     max-width: 1140px;
