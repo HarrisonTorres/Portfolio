@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import * as S from "./styles";
+import Image from "next/image";
 function ProjectsContainer({
   title,
   description,
@@ -22,6 +23,11 @@ function ProjectsContainer({
           </S.TextContainer>
         </S.Section>
       </S.Content>
+      <S.BgImage>
+        <Image className="image-1" src='/assets/images/smartfone-house-3d.png' width={600} height={600} objectFit="cover"></Image>
+        <Image className="image-2" src='/assets/images/nuvem1.png' width={600} height={600} objectFit="cover"></Image>
+        <Image className="image-3" src='/assets/images/nuvem2.png' width={600} height={600} objectFit="cover"></Image>
+      </S.BgImage>
     </S.Container>
   );
 }
